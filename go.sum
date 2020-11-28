@@ -1,0 +1,4 @@
+github.com/go-akka/configuration v0.0.0-20200606091224-a002c0330665 h1:Iz3aEheYgn+//VX7VisgCmF/wW3BMtXCLbvHV4jMQJA=
+github.com/go-akka/configuration v0.0.0-20200606091224-a002c0330665/go.mod h1:19bUnum2ZAeftfwwLZ/wRe7idyfoW2MfmXO464Hrfbw=
+github.com/lib/pq v1.8.0 h1:9xohqzkUwzR4Ga4ivdTcawVS89YSDVxXMa3xJX3cGzg=
+github.com/lib/pq v1.8.0/go.mod h1:AlVN5x4E4T544tWzH6hKfbfQvm3HdbOxrmggDNAPY9o=
