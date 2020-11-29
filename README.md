@@ -1,2 +1,37 @@
-# server-count-poster
- Simple script for post server count from database.
+# HUGE - StatsPoster
+Simple script for post server count from database to diferent discord list websites.
+
+## Requirements
+- A postgresql database.
+- A schema called discord.
+- A table called discord.shard_guilds.
+- A [credentials.conf](/credentials.conf.example) file with all your credentials
+
+
+### Database schema ans table
+```sql
+CREATE SCHEMA discord AUTHORIZATION your_database_user;
+
+CREATE TABLE discord.shard_guilds (
+ id int4 NOT NULL,
+	count int4 NOT NULL,
+	CONSTRAINT shard_guilds_pkey PRIMARY KEY (id)
+);
+```
+
+### How to build and execute the script
+##### With Golang
+```shell
+go run main
+```
+##### Windows
+```shell
+go build
+./main.exe
+```
+##### Linux
+```shell
+go build
+chmod +x main
+./main
+```
