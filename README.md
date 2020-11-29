@@ -13,7 +13,7 @@ Simple script for post server count from database to diferent discord list websi
 CREATE SCHEMA discord AUTHORIZATION your_database_user;
 
 CREATE TABLE discord.shard_guilds (
- id int4 NOT NULL,
+	id int4 NOT NULL,
 	count int4 NOT NULL,
 	CONSTRAINT shard_guilds_pkey PRIMARY KEY (id)
 );
