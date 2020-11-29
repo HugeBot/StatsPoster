@@ -35,3 +35,16 @@ go build
 chmod +x main
 ./main
 ```
+
+### Schedule with cronjob on Linux
+```shell
+crontab -e
+```
+
+```shell
+@hourly cd /path/to/binary/main && ./main
+```
+or
+```shell
+0 * * * * cd /path/to/binary/main && ./main
+```
