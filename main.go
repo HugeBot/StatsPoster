@@ -6,13 +6,23 @@ import (
 	"fmt"
 	"log"
 	"net/http"
+	"os"
+	"path/filepath"
 
 	"github.com/go-akka/configuration"
 	_ "github.com/lib/pq"
 )
 
 func main() {
-	conf := configuration.LoadConfig("credentials.conf")
+	wd, err := os.Getwd()
+	if err != nil {
+		panic(err)
+	}
+
+	confPath := filepath.Join(fmt.Sprintf("%s/credentials.conf", wd))
+	log.Printf("Config file directory %s", confPath)
+
+	conf := configuration.LoadConfig(confPath)
 	client := &http.Client{}
 
 	totalCount, err := getTotalGuildCount(conf)
