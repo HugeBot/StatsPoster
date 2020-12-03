@@ -27,13 +27,13 @@ go run main
 ##### Windows
 ```shell
 go build
-./main.exe
+./stats-poster.exe
 ```
 ##### Linux
 ```shell
 go build
 chmod +x main
-./main
+./stats-poster
 ```
 
 ### Schedule with cronjob on Linux
