@@ -66,7 +66,7 @@ func getTotalGuildCount(conf *configuration.Config) (totalCount int, err error) 
 
 	log.Println("[Database]", "Fetching shard stats...")
 	defer db.Close()
-	rows, err := db.Query("SELECT * FROM discord.shard_guilds")
+	rows, err := db.Query("SELECT id, count FROM discord.shard_guilds")
 	if err != nil {
 		return 0, err
 	}
