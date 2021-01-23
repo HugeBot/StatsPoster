@@ -42,9 +42,9 @@ crontab -e
 ```
 
 ```shell
-@hourly cd /path/to/binary/main && ./main
+@hourly cd /path/to/binary && stats-poster
 ```
 or
 ```shell
-0 * * * * cd /path/to/binary/main && ./main
+0 * * * * cd /path/to/binary && stats-poster
 ```
