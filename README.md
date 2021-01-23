@@ -32,7 +32,7 @@ go build
 ##### Linux
 ```shell
 go build
-chmod +x main
+chmod +x stats-poster
 ./stats-poster
 ```
 
